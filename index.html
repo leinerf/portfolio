@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -64,6 +64,7 @@
         
         .feature {
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            height: fit-content;
         }
         
         #contact img {
@@ -110,13 +111,13 @@
         </div>
     </nav>
     <section id="about" class="">
-        <div class="px-4 py-5 my-5 text-center"> <img class="d-block mx-auto mb-4" src="./placeholder.png" alt="" width="72" height="57">
+        <div class="px-4 py-5 my-5 text-center"> <img class="d-block mx-auto mb-4" src="./profile.jpeg" alt="" width="72" height="57">
             <h1 class="intro">Hello, <span id="name">freniel</span> here</h1>
             <div class="col-lg-6 mx-auto">
                 <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful
                     JavaScript plugins.</p>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                    <a href="./Resume-9-11-2025.pdf"><button type="button" class="btn btn-lg px-4">Resume</button></a>
+                    <a href="./resume.pdf"><button type="button" class="btn btn-lg px-4">Resume</button></a>
                     <a href="mailto:frenielzabala@gmail.com"><button type="button" class="btn  btn-lg px-4">Email</button></a>
                 </div>
             </div>
@@ -129,7 +130,14 @@
                 <div class="feature p-3 mt-5">
                     <h3 class="">Box Inc - Backend Developer</h3>
                     <p>Dec 2019 - Dec 2022</p>
-                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                    <ul>
+                        <li>Managed 80% of Box Services through Kubernetes</li>
+                        <li>Implemented automated software updates with Jenkins and Groovy. Improving software updates rollout safety for 300 applications.</li>
+                        <li>Conducted platform stress testing to prepare the migration of large services to Cloud Infrastructure.</li>
+                        <li>Refactored legacy CI/CD pipelines to use security scans in core platform services. Improved security for ~200 services across 10 teams.</li>
+                        <li>Increased Box’s Kubernetes platform capacity by 10% through service footprint analysis and capacity calculation</li>
+                        <li>Wrote and rolled out alerts and metrics dashboards across 200 services to standardize observability patterns and provide out-of-the-box visibility into the health of services</li>
+                    </ul>
                     <button type="button" class="btn  btn-lg me-2 mb-2">Python</button>
                     <button type="button" class="btn  btn-lg me-2 mb-2">Golang</button>
                     <button type="button" class="btn  btn-lg me-2 mb-2">Kubernetes</button>
@@ -138,7 +146,11 @@
                 <div class="feature p-3 mt-5">
                     <h3 class="">Box Inc - Intern Developer</h3>
                     <p>June 2018 - Sept 2019</p>
-                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                    <ul>
+                        <li>Designed and built auto remediation systems that allowed applications to recover from errors</li>
+                        <li>Kubernetes Controllers and Custom Resources to add and manage remediation steps for apps running on Kubernetes</li>
+                        <li>Participated in agile workflow, like daily standups and tracking work with JIRA</li>
+                    </ul>
                     <button type="button" class="btn  btn-lg me-2 mb-2">Python</button>
                     <button type="button" class="btn  btn-lg me-2 mb-2">Golang</button>
                     <button type="button" class="btn  btn-lg me-2 mb-2">Kubernetes</button>
@@ -147,7 +159,11 @@
                 <div class="feature p-3 mt-5">
                     <h3 class="">HackUCI - Frontend Developer</h3>
                     <p>Dec 2017 - Feb 2018</p>
-                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                    <ul>
+                        <li>Created education management tools used by 30,000 students and faculty</li>
+                        <li>Implemented navigation flow with html, css, and javascript, for a better user experience</li>
+                        <li>Implemented sandbox collaborator features using PHP, with Symphony framework, and SQL, for teachers to add collaborators to their courses</li>
+                    </ul>
                     <button type="button" class="btn  btn-lg me-2 mb-2">Angularjs</button>
                     <button type="button" class="btn  btn-lg me-2 mb-2">Node.js</button>
                     <button type="button" class="btn  btn-lg me-2 mb-2">Web Technologies</button>
@@ -170,22 +186,36 @@
     <section id="projects">
         <div class="container px-4 py-5 my-5" id="featured-3">
             <h2 class="">Projects</h2>
-            <div class="d-flex flex-wrap justify-content-lg-between justify-content-sm-center ms-5">
+            <div class="d-flex flex-wrap justify-content-lg-between ">
                 <div class="feature p-3 mt-5">
-                    <h3 class="">Project Example</h3>
-                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-                    <button type="button" class="btn  btn-lg me-2 mb-2">github</button>
+                    <h3 class="">Top 200 Drugs</h3>
+                    <ul>
+                        <li>Designed a user-friendly website specifically tailored for Pharmacy Technician students to facilitate their learning of the Top 200 drugs, which can be accessed at this <a href="https://top-200-quiz.onrender.com">website</a>.</li>
+                        <li>This website is built upon the Bootstrap framework and utilizes a combination of vanilla JavaScript, HTML, and CSS for its frontend, while employing Node.js for its backend functionalities.</li>
+                        <li>It has been developed as a valuable resource for students preparing for the National Healthcareer Association (NHA) examinations.</li>
+                    </ul>
+                    <button type="button" class="btn  btn-lg me-2 mb-2">Github: <a href="https://github.com/leinerf/top_200_quiz">Top 200 drugs</a></button>
+                    <button type="button" class="btn  btn-lg me-2 mb-2">Website: <a href="https://top-200-quiz.onrender.com/">Top 200 Drugs Website</a></button>
                 </div>
                 <div class="feature p-3 mt-5">
-                    <h3 class="">Project Example</h3>
-                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-                    <button type="button" class="btn  btn-lg me-2 mb-2">github</button>
+                    <h3 class="">Book Saver</h3>
+                    <ul>
+                        <li>Designed for book lovers to save notes and reviews on the books they read</li>
+                        <li>Frontend is built on top of Bootstrap Framework and utilizes vanilla javascript, html(ejs) and css for additional styling</li>
+                        <li>Deployed using Node.js for backend logic, while incorporating <a href="https://openlibrary.org/developers/api">Open Library</a> and using Postgress for the database</li>
+                    </ul>
+                    <button type="button" class="btn  btn-lg me-2 mb-2">Github: <a href="https://github.com/leinerf/book_saver">Book Saver</a></button>
                 </div>
                 <div class="feature p-3 mt-5">
-                    <h3 class="">Project Example</h3>
-                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
-                    <button type="button" class="btn  btn-lg me-2 mb-2">github</button>
+                    <h3 class="">EasySlip</h3>
+                    <ul>
+                        <li>1st Place Winner of DocuSign’s eSignature and ID Verification API Challenge at UC Berkeley’s 6th Annual Hackathon (200+ teams). Devpost can be accessed at https://devpost.com/software/easyslip-szdy5h - <a href="https://devpost.com/software/easyslip-szdy5h">devpost</a></li>
+                        <li>Built an internal tool using React.js and Python (Flask) to streamline the distribution, signing, and management of permission slips and waivers between teachers and parents</li>
+                    </ul>
+                    <button type="button" class="btn  btn-lg me-2 mb-2">Github: <a href="https://github.com/leinerf/easyslip">EasySlip</a></button>
+                    <button type="button" class="btn  btn-lg me-2 mb-2">Devpost: <a href="https://devpost.com/software/easyslip-szdy5h">Easy Slip</a></button>
                 </div>
+
             </div>
         </div>
     </section>
